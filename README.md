@@ -24,6 +24,7 @@ mBlock -> Connect/Serial -> Select Robot connecting COM Port
 #### Arduino Mode
 Scartch Program will be convert to Arduino Code then Upload to Robot as Firmware, the program now run by Robot itself
  - mBlock -> Edit/Arduino Mode: the Arduino Script Area will appear, after programming in Scratch, Select Upload to Arduino to upload the firmware, the mBlock will compile the programming and upload to Robot.
+ - mBlock -> Board -> Select Arduino Nano (Mega328)
  - After Upload, the Otto will not able to run in Scratch mode until the compatible firmware is pre-Uploaded
 #### Scratch Mode
 Scratch Program run in mBlock Software, the command (Scratch blocks) will be send to Robot to sync the Robot activity.
