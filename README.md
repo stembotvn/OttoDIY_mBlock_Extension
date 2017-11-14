@@ -4,6 +4,18 @@ Download and install mBlock Software: http://www.mblock.cc/
 ## OttoDIY 
    A BiPedal Robot is very Fun and wonderful opensource project. http://www.ottodiy.com/
    You can build your own and teach your kids programming Scratch for Otto Robot using this Extension 
+## Hardware (Basically same OttoDIY project)
+- connect Servo Hip left to D2
+- Connect Servo Foot Left to D4
+- Connect Servo Hip right to D3
+- COnnect Servo Foot Right to D5
+- Buzzer to D11 (Active High)
+- HC06Rx to Arduino Tx(D8)
+- HO06Tx to Arduino Rx(D7)
+- SRF04 Trigger to D10
+- SRF04 Echo    To D9
+- Sound Sensor  to A6 (if any)
+Refer the Arduino Library using in Extension for Detail: https://github.com/stembotvn/OttoDIY_Vbot
 ## Installation Extension in mBlock software
 ### Quick Installation
     Not available now
