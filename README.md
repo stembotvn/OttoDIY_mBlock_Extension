@@ -6,7 +6,7 @@ Download and install mBlock Software: http://www.mblock.cc/
    You can build your own and teach your kids programming Scratch for Otto Robot using this Extension 
 ## Installation Extension in mBlock software
 ### Quick Installation
-    mBlock -> Extensions/Manage Extensions/ Search: "OttoDIY" by Hien Phan (Still not yet upload to mBlock Server, will complete soon)
+    Not available now
 ### Manual Installation
    - Download this repository in Zip file format
    - Open the Mblock software, go to the Extensions / Manage Extensions tab -> Click "Add Extension" -> Browsing to the path of downloaded file
