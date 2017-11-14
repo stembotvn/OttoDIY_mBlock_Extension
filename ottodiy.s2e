@@ -1,0 +1,147 @@
+{	
+	"extensionName": "ottodiy",
+	"description": "ottodiy Extension",
+	"version": "1.0",
+	"author": "Hien Phan",
+	"homepage": "http://stembot.vn",
+	"sort":0,
+	"javascriptURL":"js/OttoV.js",
+  	"firmware":"1.0",
+  	"extensionPort":0,
+	"tags" : "Otto,Vbot",
+	"blockSpecs": [
+	    [
+			"h",
+			"Otto Program",
+			"runArduino",
+			{
+				"setup":"Vbot.init(HIP_L, HIP_R, FOOT_L, FOOT_R, false, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);\n Vbot.home();\n Vbot.sing(S_connection);\n",
+				"inc":"#include \"Otto.h\"\n#include <Servo.h>\n",
+				"def":"Otto Vbot;\n",
+				"work":"",
+				"loop":""
+			}
+		],
+		[
+			"w",
+			"move %d.actions speed %d.speeds",
+			"move",
+			"forward",
+			"normal",
+			{
+				"setup":"",
+				"inc":"",
+				"def":"",
+				"work":"Vbot.move({0},{1});\n",
+				"loop":""
+			}
+		],
+
+		[
+			"w",
+			"gesture %d.gestures",
+			"gesture",
+			"happy",
+			{
+				"setup":"",
+				"inc":"",
+				"def":"",
+				"work":"Vbot.playGesture({0});\n",
+				"loop":""
+			}
+		],
+
+		[
+			"w",
+			"sing %d.songs",
+			"sing",
+			"Connection",
+			{
+				"setup":"",
+				"inc":"",
+				"def":"",
+				"work":"Vbot.sing({0});\n",
+				"loop":""
+			}
+		],
+		[
+			"r",
+			"Get Distance",
+			"getDistance",
+			{
+				"setup":"",
+				"inc":"",
+				"def":"",
+				"work":"Vbot.getDistance()",
+				"loop":""
+			}
+		]
+		
+	],
+	"menus": {
+		"actions": ["home", "forward","backward","turn left", "turn right", "updown", "moonwalker left","moonwalker right", "swing", "crusaito 1", "crusaito 2", "jump", "flapping 1", "flapping 2", "tiptoeSwing", "bend left", "bend right", "shakeLeg right", "shakeLeg left", "jitter", "ascendingTurn"],
+		"speeds": ["very fast", "fast", "normal", "slow", "very slow"],
+		"gestures": ["happy", "supperhappy", "sad", "sleeping", "fart", "confused", "love", "angry", "fretful", "magic", "wave", "victory", "fail"],
+		"songs": ["Connection", "Disconnection", "Surprise", "OhOoh", "OhOoh2", "Cuddly", "Sleeping", "Happy", "Supperhappy", "Happy short", "Sad", "Confused", "Fart1", "Fart2", "Fart3"]
+	},
+	"values":{
+        "home":0,
+        "forward":1,
+        "backward":2,
+        "turn left":3,
+        "turn right":4,
+        "updown":5,
+        "moonwalker left":6,
+        "moonwalker right":7,
+        "swing":8,
+        "crusaito 1":9,
+        "crusaito 2":10,
+        "jump":11,
+        "flapping 1":12,
+        "flapping 2":13,
+        "tiptoeSwing":14,
+        "bend left":15,
+        "bend right":16,
+        "shakeLeg right":17,
+        "shakeLeg left":18,
+        "jitter":19,
+        "ascendingTurn":20,
+		"very fast":500,
+		"fast":800,
+		"normal":1000,
+		"slow":1300,
+		"very slow": 1700,
+		"happy":0,
+		"supperhappy":1,
+		"sad":2,
+		"sleeping":3,
+		"fart":4,
+		"confused":5,
+		"love":6,
+		"angry":7,
+		"fretful":8,
+		"magic":9,
+		"wave":10,
+		"victory":11,
+		"fail":12,
+		"Connection":0,
+		"Disconnection":1,
+		"OhOoh":2,
+		"OhOoh2":3,
+		"Cuddly":4,
+		"Sleeping":5,
+		"Happy":6,
+		"Supperhappy":7,
+		"Happy short":8,
+		"Sad":9,
+		"Confused":10,
+		"Fart1":11,
+		"Fart2":12,
+		"Fart3":13},
+			
+	
+	"translators":{
+		
+		}
+	
+}
