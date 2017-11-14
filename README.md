@@ -14,8 +14,8 @@ Download and install mBlock Software: http://www.mblock.cc/
 - HO06Tx to Arduino Rx(D7)
 - SRF04 Trigger to D10
 - SRF04 Echo    To D9
-- Sound Sensor  to A6 (if any)
-Refer the Arduino Library using in Extension for Detail: https://github.com/stembotvn/OttoDIY_Vbot
+- Sound Sensor  to A6 (if any).
+- Refer the My Arduino Library using in Extension for Detail: https://github.com/stembotvn/OttoDIY_Vbot
 ## Installation Extension in mBlock software
 ### Quick Installation
     Not available now
