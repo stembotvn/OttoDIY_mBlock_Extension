@@ -27,7 +27,7 @@ Scartch Program will be convert to Arduino Code then Upload to Robot as Firmware
  - mBlock -> Board -> Select Arduino Nano (Mega328)
  - After Upload, the Otto will not able to run in Scratch mode until the compatible firmware is pre-Uploaded
 #### Scratch Mode
-Scratch Program run in mBlock Software, the command (Scratch blocks) will be send to Robot to sync the Robot activity.
+Scratch Program run in mBlock Software, the command (Scratch blocks) will be sent to Robot to sync the Robot activity.
 - The PC need keep on connecting with Robot Otto 
 - Otto need to pre-upload by the appropreate firmware depend on using Serial or Bluetooth Connection:
 - Library to pre-upload code to Otto for using Scratch mode (must use Arduino IDE to implement): https://github.com/stembotvn/OttoDIY_Vbot
