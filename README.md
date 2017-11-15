@@ -18,7 +18,7 @@ Download and install mBlock Software: http://www.mblock.cc/
 - Refer the My Arduino Library using in Extension for Detail: https://github.com/stembotvn/OttoDIY_Vbot
 ## Installation Extension in mBlock software
 ### Quick Installation
-    Not available now
+- mBlock -> Extensions/Manage Extension/Search, type name: "ottoDIY" by Hien Phan, click download. It will work. 
 ### Manual Installation
    - Download this repository in Zip file format
    - Open the Mblock software, go to the Extensions / Manage Extensions tab -> Click "Add Extension" -> Browsing to the path of downloaded file
