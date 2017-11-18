@@ -17,9 +17,9 @@ Download and install mBlock Software: http://www.mblock.cc/
 - HO06Tx to Arduino Rx(D6)
 - SRF04 Trigger to D8
 - SRF04 Echo    To D9
-- Sound Sensor  to A6, 
-- Light sensor Left to A1
-- Light Sensor Right to A0
+- Sound Sensor  to analog A6, 
+- Light sensor Left to analog A1
+- Light Sensor Right to analog A0
 - Button 1    to D11 (low active: connect D11 to Gnd) 
 - Button 2    to D12 (low active)
 - Refer the My Arduino Library using in Extension for Detail: https://github.com/stembotvn/OttoDIY_Vbot
