@@ -1,9 +1,12 @@
 # OttoDIY_mBlock_Extension
 Mblock is a software that allows Programming in Scratch Language for robots,Release by MakeBlocks, inherited from Scratch 2.0 by MIT. Extension is a set of files that allows you to install blocks for different types of robots to compatible with mBlock Environment
 Download and install mBlock Software: http://www.mblock.cc/
+
 ## OttoDIY 
    A BiPedal Robot is very Fun and wonderful opensource project. http://www.ottodiy.com/
    You can build your own and teach your kids programming Scratch for Otto Robot using this Extension 
+## WHAT NEWS WITH OTTO mBLOCK in SCRATCH languague:
+   ### Otto can response sound, can follow the light, can read 2 buttons, can send and receive data to Serial   
 ## Hardware (Basically same OttoDIY project)
 - connect Servo Hip left to D2
 - Connect Servo Foot Left to D4
@@ -14,7 +17,11 @@ Download and install mBlock Software: http://www.mblock.cc/
 - HO06Tx to Arduino Rx(D6)
 - SRF04 Trigger to D8
 - SRF04 Echo    To D9
-- Sound Sensor  to A6 (if any).
+- Sound Sensor  to A6, 
+- Light sensor Left to A1
+- Light Sensor Right to A0
+- Button 1    to D11 (low active: connect D11 to Gnd) 
+- Button 2    to D12 (low active)
 - Refer the My Arduino Library using in Extension for Detail: https://github.com/stembotvn/OttoDIY_Vbot
 ## Installation Extension in mBlock software
 ### Quick Installation
