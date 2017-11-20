@@ -26,7 +26,7 @@ Download and install mBlock Software: http://www.mblock.cc/
 ## Installation Extension in mBlock software
 ### Quick Installation
 - mBlock -> Extensions/Manage Extension/Search, type name: "ottoDIY" by Hien Phan, click download. It will work. 
-See Video: https://youtu.be/6cpj8iwdlck
+See Video: https://www.youtube.com/watch?v=lPDUmW9uHto
 ### Manual Installation
    - Download this repository in Zip file format
    - Open the Mblock software, go to the Extensions / Manage Extensions tab -> Click "Add Extension" -> Browsing to the path of downloaded file
