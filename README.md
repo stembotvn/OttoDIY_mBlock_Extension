@@ -17,9 +17,9 @@ Download and install mBlock Software: http://www.mblock.cc/
 - HO06Tx to Arduino Rx(D6)
 - SRF04 Trigger to D8
 - SRF04 Echo    To D9
-- Max7219   DATA    12   
-- Max7219   CS    10
-- Max7219  CLK    11
+- Max7219   DATA    D12   
+- Max7219   CS    D10
+- Max7219  CLK    D11
 - Sound Sensor  to analog A6, 
 - Light sensor Left to analog A1
 - Light Sensor Right to analog A0
