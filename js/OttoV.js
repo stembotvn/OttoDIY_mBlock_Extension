@@ -45,22 +45,22 @@
         "fail":0x3133
     };
 
-    var songs = {
-        "connection": 0x31,
-        "disconnection":0x32,
-        "surprise":0x33,
+      var songs = {
+        "Connection": 0x31,
+        "Disconnection":0x32,
+        "Surprise":0x33,
         "OhOoh":0x34,
         "OhOoh2":0x35,
-        "cuddly":0x36,
-        "sleeping":0x37,
-        "happy":0x38,
-        "supperhappy":0x39,
-        "happy short":0x3130,
-        "sad":0x3131,
-        "confused":0x3132,
-        "fart1":0x3133,
-        "fart2":0x3134,
-        "fart3":0x3135
+        "Cuddly":0x36,
+        "Sleeping":0x37,
+        "Happy":0x38,
+        "Supperhappy":0x39,
+        "Happy short":0x3130,
+        "Sad":0x3131,
+        "Confused":0x3132,
+        "Fart1":0x3133,
+        "Fart2":0x3134,
+        "Fart3":0x3135
     };
 
     var speeds = {

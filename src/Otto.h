@@ -6,7 +6,7 @@
 //#include <EEPROM.h>
 
 #include "US.h"
-#include "LedMatrix.h"
+#include "MaxMatrix.h"
 #include "BatReader.h"
 
 #include "Otto_mouths.h"
@@ -28,12 +28,17 @@
 #define HIP_R   3        // Connect Servo Hip right to D3
 #define FOOT_R  5        // COnnect Servo Foot Right to D5
 
-#define PIN_Buzzer  10
+#define PIN_Buzzer  13
 #define PIN_Trigger 8
 #define PIN_Echo    9
 #define PIN_NoiseSensor A6
+///define Bluetooth in SoftwareSerial 
 #define BT_Rx   6  
 #define BT_Tx   7
+//define Max7219 pins 
+#define PIN_DIN    12   //max 7219
+#define PIN_CS     10
+#define PIN_CLK    11
 
 class Otto
 {
@@ -85,9 +90,9 @@ class Otto
     double getBatteryVoltage();
     
     //-- Mouth & Animations
-   // void putMouth(unsigned long int mouth, bool predefined = true);
-   // void putAnimationMouth(unsigned long int anim, int index);
-  //  void clearMouth();
+    void putMouth(unsigned long int mouth, bool predefined = true);
+    void putAnimationMouth(unsigned long int anim, int index);
+    void clearMouth();
  
     //-- Sounds
     void _tone (float noteFrequency, long noteDuration, int silentDuration);
@@ -100,7 +105,8 @@ class Otto
  
   private:
     
-   // LedMatrix ledmatrix;
+    MaxMatrix ledmatrix=MaxMatrix(PIN_DIN,PIN_CS,PIN_CLK, 1);  // init Max7219 LED Matrix, 1 module
+
     BatReader battery;
     Oscillator servo[4];
     US us;

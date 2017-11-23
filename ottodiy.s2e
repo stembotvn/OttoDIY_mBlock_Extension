@@ -1,7 +1,7 @@
 {
 	"extensionName": "ottodiy",
 	"description": "ottodiy Extension",
-	"version": "2.0",
+	"version": "2.1",
 	"author": "Hien Phan",
 	"homepage": "http://stembot.vn",
 	"sort": 0,
@@ -64,6 +64,20 @@
 				"loop": ""
 			}
 		],
+		
+		[
+			"w",
+			"Show Mouth: %d.mouth",
+			"putMouth",
+			"smile",
+			{
+				"setup": "",
+				"inc": "",
+				"def": "",
+				"work": "Vbot.putMouth({0});\n",
+				"loop": ""
+			}
+		],
 		[
 			"r",
 			"Get Distance",
@@ -107,10 +121,10 @@
 			"getButton",
 			"key1",
 			{
-				"setup": "pinMode({0},INPUT_PULLUP);\n",
+				"setup": "pinMode(A{0},INPUT_PULLUP);\n",
 				"inc": "",
 				"def": "",
-				"work": "(digitalRead({0})== 0)",
+				"work": "(digitalRead(A{0})== 0)",
 				"loop": ""
 			}
 		],
@@ -156,7 +170,9 @@
 		"gestures": ["happy", "supperhappy", "sad", "sleeping", "fart", "confused", "love", "angry", "fretful", "magic", "wave", "victory", "fail"],
 		"songs": ["Connection", "Disconnection", "Surprise", "OhOoh", "OhOoh2", "Cuddly", "Sleeping", "Happy", "Supperhappy", "Happy short", "Sad", "Confused", "Fart1", "Fart2", "Fart3"],
 		"light": ["LEFT", "RIGHT"],
-		"button_key": ["key1", "key2"]
+		"button_key": ["key1", "key2"],
+		"mouth":["zero","one","two","three","four","five","six","seven","eight","nine","smile","happyOpen","happyClosed","heart","bigSurprise","smallSurprise","tongueOut","vamp1","vamp2","lineMouth","confusedMouth","diagonal","sadMouth","sadOpen","sadClosed","okMouth","xMouth","interrogation","thunder","culito","angryMouth"]
+		
 
 	},
 	"values": {
@@ -215,8 +231,40 @@
 		"Fart3": 13,
 		"LEFT": 1,
 		"RIGHT": 0,
-		"key1": 11,
-		"key2": 12
+		"key1": 2,
+		"key2": 3,
+		"zero":0,
+		"one":1,
+		"two":2,
+		"three":3,
+		"four":4,
+		"five":5,
+		"six":6,
+		"seven":7,
+		"eight":8,
+		"nine":9,
+		"smile":10,
+		"happyOpen":11,
+		"happyClosed":12,
+		"heart":13,
+		"bigSurprise":14,
+		"smallSurprise":15,
+		"tongueOut":16,
+		"vamp1":17,
+		"vamp2":18,
+		"lineMouth":19,
+		"confusedMouth":20,
+		"diagonal":21,
+		"sadMouth":22,
+		"sadOpen":23,
+		"sadClosed":24,
+		"okMouth":25,
+		"xMouth":26,
+		"interrogation":27,
+		"thunder":28,
+		"culito":29,
+		"angryMouth":30
+		
 	},
 
 
