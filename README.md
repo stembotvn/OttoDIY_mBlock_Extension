@@ -12,16 +12,19 @@ Download and install mBlock Software: http://www.mblock.cc/
 - Connect Servo Foot Left to D4
 - Connect Servo Hip right to D3
 - COnnect Servo Foot Right to D5
-- Buzzer to D10 (Active High)
+- Buzzer to D13 (Active High)
 - HC06Rx to Arduino Tx(D7)
 - HO06Tx to Arduino Rx(D6)
 - SRF04 Trigger to D8
 - SRF04 Echo    To D9
+- Max7219   DATA    12   
+- Max7219   CS    10
+- Max7219  CLK    11
 - Sound Sensor  to analog A6, 
 - Light sensor Left to analog A1
 - Light Sensor Right to analog A0
-- Button 1    to D11 (low active: connect D11 to Gnd) 
-- Button 2    to D12 (low active)
+- Button 1    to A2 in pull up input (low active: connect A2 to Gnd) 
+- Button 2    to A3 in pull up input(low active: connect A3 to Gnd)
 - Refer the My Arduino Library using in Extension for Detail: https://github.com/stembotvn/OttoDIY_Vbot
 ## Installation Extension in mBlock software
 ### Quick Installation
