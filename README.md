@@ -18,9 +18,9 @@ Download and install mBlock Software: http://www.mblock.cc/
 - HO06Tx to Arduino Rx(D6)
 - SRF04 Trigger to D8
 - SRF04 Echo    To D9
-- Max7219   DATA    D12   For LED Matrix emotion
-- Max7219   CS    D10     For LED Matrix emotion
-- Max7219  CLK    D11     For LED Matrix emotion
+- Max7219   DATA    D10   For LED Matrix emotion
+- Max7219   CS    D11     For LED Matrix emotion
+- Max7219  CLK    D12     For LED Matrix emotion
 - Sound Sensor  to analog A6, 
 - Light sensor Left to analog A1
 - Light Sensor Right to analog A0
