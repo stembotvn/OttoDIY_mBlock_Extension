@@ -1,9 +1,9 @@
 {
 	"extensionName": "ottodiy",
 	"description": "ottodiy Extension",
-	"version": "2.1",
+	"version": "2.2",
 	"author": "Hien Phan",
-	"homepage": "http://stembot.vn",
+	"homepage": "https://github.com/stembotvn/OttoDIY_mBlock_Extension",
 	"sort": 0,
 	"javascriptURL": "js/OttoV.js",
 	"firmware": "1.0",
@@ -75,6 +75,32 @@
 				"inc": "",
 				"def": "",
 				"work": "Vbot.putMouth({0});\n",
+				"loop": ""
+			}
+		],
+			[
+			"w",
+			"Show Animation Mouth: %d.animouth in step %d  ",
+			"animouth",
+			"littleUuh",
+			"0",
+			{
+				"setup": "",
+				"inc": "",
+				"def": "",
+				"work": "Vbot.putAnimationMouth({0},{1});\n",
+				"loop": ""
+			}
+		],
+		[
+			"w",
+			"Clear Mouth",
+			"clearMouth",
+			{
+				"setup": "",
+				"inc": "",
+				"def": "",
+				"work": "Vbot.clearMouth();\n",
 				"loop": ""
 			}
 		],
@@ -171,7 +197,8 @@
 		"songs": ["Connection", "Disconnection", "Surprise", "OhOoh", "OhOoh2", "Cuddly", "Sleeping", "Happy", "Supperhappy", "Happy short", "Sad", "Confused", "Fart1", "Fart2", "Fart3"],
 		"light": ["LEFT", "RIGHT"],
 		"button_key": ["key1", "key2"],
-		"mouth":["zero","one","two","three","four","five","six","seven","eight","nine","smile","happyOpen","happyClosed","heart","bigSurprise","smallSurprise","tongueOut","vamp1","vamp2","lineMouth","confusedMouth","diagonal","sadMouth","sadOpen","sadClosed","okMouth","xMouth","interrogation","thunder","culito","angryMouth"]
+		"mouth":["zero","one","two","three","four","five","six","seven","eight","nine","smile","happyOpen","happyClosed","heart","bigSurprise","smallSurprise","tongueOut","vamp1","vamp2","lineMouth","confusedMouth","diagonal","sadMouth","sadOpen","sadClosed","okMouth","xMouth","interrogation","thunder","culito","angryMouth"],
+		"animouth":["littleUuh","dreamMouth","adivinawi","waveMouth"]
 		
 
 	},
@@ -263,8 +290,12 @@
 		"interrogation":27,
 		"thunder":28,
 		"culito":29,
-		"angryMouth":30
-		
+		"angryMouth":30,
+		"littleUuh":0,
+		"dreamMouth":1,
+		"adivinawi":2,
+		"waveMouth":3
+				
 	},
 
 
