@@ -36,9 +36,9 @@
 #define BT_Rx   6  
 #define BT_Tx   7
 //define Max7219 pins 
-#define PIN_DIN    12   //max 7219
-#define PIN_CS     10
-#define PIN_CLK    11
+#define PIN_DIN    10   //max 7219
+#define PIN_CS     11
+#define PIN_CLK    12
 
 class Otto
 {
