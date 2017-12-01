@@ -96,6 +96,7 @@ class Otto
  
     //-- Sounds
     void _tone (float noteFrequency, long noteDuration, int silentDuration);
+    void _playNote(float noteFrequency, long noteDuration);
     void bendTones (float initFrequency, float finalFrequency, float prop, long noteDuration, int silentDuration);
     void sing(int songName);
 

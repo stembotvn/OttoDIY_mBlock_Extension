@@ -715,7 +715,14 @@ void Otto::_tone (float noteFrequency, long noteDuration, int silentDuration){
       //noTone(PIN_Buzzer);
       delay(silentDuration);     
 }
-
+///////
+void Otto::_playNote(float noteFrequency, long noteDuration)
+{
+  tone(Otto::pinBuzzer, noteFrequency, noteDuration);
+  int pauseBetweenNotes = noteDuration * 1.30;
+    delay(pauseBetweenNotes);
+    noTone(Otto::pinBuzzer);
+}
 
 void Otto::bendTones (float initFrequency, float finalFrequency, float prop, long noteDuration, int silentDuration){
 

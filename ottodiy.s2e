@@ -1,7 +1,7 @@
 {
 	"extensionName": "ottodiy",
-	"description": "OttoDIY Extension",
-	"version": "2.3",
+	"description": "ottodiy Extension",
+	"version": "2.4",
 	"author": "Hien Phan",
 	"homepage": "https://github.com/stembotvn/OttoDIY_mBlock_Extension",
 	"sort": 0,
@@ -54,7 +54,7 @@
 
 		[
 			"w",
-			"sing %d.songs",
+			"Play sound %d.songs",
 			"sing",
 			"Connection",
 			{
@@ -62,6 +62,20 @@
 				"inc": "",
 				"def": "",
 				"work": "Vbot.sing({0});\n",
+				"loop": ""
+			}
+		],
+		[
+			"w",
+			"Play melody Note %d.note in beat %d.beats",
+			"playNote",
+			"C4",
+			"Half",
+			{
+				"setup": "",
+				"inc": "",
+				"def": "",
+				"work": "Vbot._playNote({0},{1});\n",
 				"loop": ""
 			}
 		],
@@ -199,7 +213,9 @@
 		"light": ["LEFT", "RIGHT"],
 		"button_key": ["key1", "key2"],
 		"mouth":["zero","one","two","three","four","five","six","seven","eight","nine","smile","happyOpen","happyClosed","heart","bigSurprise","smallSurprise","tongueOut","vamp1","vamp2","lineMouth","confusedMouth","diagonal","sadMouth","sadOpen","sadClosed","okMouth","xMouth","interrogation","thunder","culito","angryMouth"],
-		"animouth":["littleUuh","dreamMouth","adivinawi","waveMouth"]
+		"animouth":["littleUuh","dreamMouth","adivinawi","waveMouth"],
+		"note":["C2","D2","E2","F2","G2","A2","B2","C3","D3","E3","F3","G3","A3","B3","C4","D4","E4","F4","G4","A4","B4","C5","D5","E5","F5","G5","A5","B5","C6","D6","E6","F6","G6","A6","B6","C7","D7","E7","F7","G7","A7","B7","C8","D8"],
+		"beats":["Half","Quarter","Eighth","Whole","Double"]
 		
 
 	},
@@ -295,7 +311,16 @@
 		"littleUuh":0,
 		"dreamMouth":1,
 		"adivinawi":2,
-		"waveMouth":3
+		"waveMouth":3,
+			"B0":31,"C1":33,"D1":37,"E1":41,"F1":44,"G1":49,"A1":55,"B1":62,
+			"C2":65,"D2":73,"E2":82,"F2":87,"G2":98,"A2":110,"B2":123,
+			"C3":131,"D3":147,"E3":165,"F3":175,"G3":196,"A3":220,"B3":247,
+			"C4":262,"D4":294,"E4":330,"F4":349,"G4":392,"A4":440,"B4":494,
+			"C5":523,"D5":587,"E5":659,"F5":698,"G5":784,"A5":880,"B5":988,
+			"C6":1047,"D6":1175,"E6":1319,"F6":1397,"G6":1568,"A6":1760,"B6":1976,
+			"C7":2093,"D7":2349,"E7":2637,"F7":2794,"G7":3136,"A7":3520,"B7":3951,
+			"C8":4186,"D8":4699,
+			"Half":500,"Quarter":250,"Eighth":125,"Whole":1000,"Double":2000	
 				
 	},
 
