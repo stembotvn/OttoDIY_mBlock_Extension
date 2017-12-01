@@ -852,9 +852,10 @@ void Otto::sing(int songName){
   }
 }
 ///////////////////////////////////////////////////////////////////
-void Otto::move(int moveID,int time){
+void Otto::move(int moveID,int time, int _moveSize){
   int T = time;
   int moveSize;
+  moveSize = _moveSize;
   switch (moveID) {
     case 0:
       home();
@@ -872,41 +873,41 @@ void Otto::move(int moveID,int time){
       turn(1,T,-1);
       break;
     case 5: //M 5 1000 30 
-      updown(1,T,30);
+      updown(1,T,moveSize);
       break;
     case 6: //M 6 1000 30
-    moveSize =30;
+   
       moonwalker(1,T,moveSize,1);
       break;
     case 7: //M 7 1000 30
-      moveSize =30;
+     
       moonwalker(1,T,moveSize,-1);
       break;
     case 8: //M 8 1000 30
-    moveSize =30;
+    
       swing(1,T,moveSize);
       break;
     case 9: //M 9 1000 30 
-    moveSize =30;
+   
       crusaito(1,T,moveSize,1);
       break;
     case 10: //M 10 1000 30
-      moveSize =30; 
+     
       crusaito(1,T,moveSize,-1);
       break;
     case 11: //M 11 1000 
       jump(1,T);
       break;
     case 12: //M 12 1000 30
-    moveSize =30;
+    
       flapping(1,T,moveSize,1);
       break;
     case 13: //M 13 1000 30
-    moveSize =30;
+    
       flapping(1,T,moveSize,-1);
       break;
     case 14: //M 14 1000 20
-    moveSize = 20;
+    
       tiptoeSwing(1,T,moveSize);
       break;
     case 15: //M 15 500 
@@ -922,11 +923,11 @@ void Otto::move(int moveID,int time){
       shakeLeg(1,T,-1);
       break;
     case 19: //M 19 500 20
-    moveSize =30;
+    
       jitter(1,T,moveSize);
       break;
     case 20: //M 20 500 15
-    moveSize =30;
+    
       ascendingTurn(1,T,moveSize);
       break;
     default:
