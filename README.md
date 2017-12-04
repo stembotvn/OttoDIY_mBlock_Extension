@@ -61,7 +61,7 @@ Scratch Program run in mBlock Software, the command (Scratch blocks) will be sen
 - For Using Scratch Mode in Serial (recommend): Pre-Upload example: https://github.com/stembotvn/OttoDIY_Vbot/tree/master/examples/Otto_Mblock_ScratchMode_Serial
 
 The Scratch Mode will fully compatible with Original Scratch 2.0 by MIT, So you can create Desktop Interface, Game, Music, Sound,....Combine with programming Otto Robot, it is really Fun. 
-### NOTE: Version 2.4 work with Fully Function only work with Arduino Mode of mBlock (code in Scratch, mBLock automatically generate to Arduino code)
+### NOTE: Version 2.4 full all of functions only work in Arduino Mode of mBlock (code in Scratch, mBLock automatically generate to Arduino code)
 
 
 
