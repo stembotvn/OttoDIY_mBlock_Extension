@@ -43,12 +43,12 @@ See Video: https://www.youtube.com/watch?v=lPDUmW9uHto
 - Bluetooth: For Programming Otto in Scratch Mode only
 #### Serial
 mBlock -> Connect/Serial -> Select Robot connecting COM Port
-#### Bluetooth
+#### Bluetooth (Limited function, just try it, not stable)
 - Pairing your HC06 with Computer in Bluetooth
 - mBlock -> Connect/Bluetooth/Clear Bluetooth -> Discover Bluetooth -> Select right name of HC06 (may be Otto or Zowi...up to you named it)
 ### Programming
 #### Arduino Mode
-Scartch Program will be convert to Arduino Code then Upload to Robot as Firmware, the program now run by Robot itself
+Scartch Program will be convert to Arduino Code then Upload to Robot as Firmware, the program now run onboard inside the Robot 
  - mBlock -> Edit/Arduino Mode: the Arduino Script Area will appear, after programming in Scratch, Select Upload to Arduino to upload the firmware, the mBlock will compile the programming and upload to Robot.
  - mBlock -> Board -> Select Arduino Nano (Mega328)
  - After Upload, the Otto will not able to run in Scratch mode until the compatible firmware is pre-Uploaded
