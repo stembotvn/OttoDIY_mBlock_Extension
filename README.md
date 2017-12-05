@@ -9,7 +9,8 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
    ### Otto can response sound, can follow the light, can read 2 buttons, can send and receive data to Computer via Serial port   
    ### Added LED MAtrix mouth for emotion 
    ### Added play melody with Buzzer
-## Hardware (Basically same OttoDIY++ project)
+# Hardware Connection (NOTE THAT THIS IS ADVANCED FUNCTIONS VERSION, THE DIAGRAM IS DIFFERENT THAN CLASSIC VERSION
+
 - connect Servo Hip left to D2
 - Connect Servo Foot Left to D4
 - Connect Servo Hip right to D3
