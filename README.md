@@ -16,8 +16,8 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
 - Connect Servo Hip right to D3
 - COnnect Servo Foot Right to D5
 - Buzzer to D13 (Active High)
-- HC06Rx to Arduino Tx(D7)
-- HO06Tx to Arduino Rx(D6)
+- HC06Rx to Arduino (D7)
+- HO06Tx to Arduino (D6)
 - SRF04 Trigger to D8
 - SRF04 Echo    To D9
 - Max7219   DATA    D10   For LED Matrix emotion
