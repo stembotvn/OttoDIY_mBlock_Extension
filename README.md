@@ -1,26 +1,23 @@
 # OttoDIY_mBlock_Extension
 Mblock is a software that allows Programming in Scratch Language for robots,Release by MakeBlocks, inherited from Scratch 2.0 by MIT. Extension is a set of files that allows you to install blocks for different types of robots to compatible with mBlock Environment
-Download and install mBlock Software: http://www.mblock.cc/
+Download and install mBlock Software: http://www.mblock.cc/software/mblock/mblock3/
 
 ## OttoDIY 
    A BiPedal Robot is very Fun and wonderful opensource project. http://www.ottodiy.com/
    You can build your own and teach your kids programming Scratch for Otto Robot using this Extension 
-   <img src="media/Otto" width="900" align="center">
-
-## WHAT NEWS WITH OTTO mBLOCK in SCRATCH languague with this Extension OttoDiy 2.4:
+## WHAT NEWS WITH OTTODIY in mBlock Extension V2.4
    ### Otto can response sound, can follow the light, can read 2 buttons, can send and receive data to Computer via Serial port   
    ### Added LED MAtrix mouth for emotion 
    ### Added play melody with Buzzer
-## Hardware (Basically same OttoDIY++ project)
-<img src="media/connection.png" width="900" align="center">
+# Hardware Connection (NOTE THAT THIS IS ADVANCED FUNCTIONS VERSION, THE DIAGRAM IS DIFFERENT THAN CLASSIC VERSION
 
 - connect Servo Hip left to D2
 - Connect Servo Foot Left to D4
 - Connect Servo Hip right to D3
 - COnnect Servo Foot Right to D5
 - Buzzer to D13 (Active High)
-- HC06Rx to Arduino Tx(D7)
-- HO06Tx to Arduino Rx(D6)
+- HC06Rx to Arduino (D7)
+- HO06Tx to Arduino (D6)
 - SRF04 Trigger to D8
 - SRF04 Echo    To D9
 - Max7219   DATA    D10   For LED Matrix emotion
@@ -44,15 +41,14 @@ See Video: https://www.youtube.com/watch?v=lPDUmW9uHto
 ## Using
 ### Connect
 - Serial: For Programming Otto in Arduino mode (Scratch Convert to Arduino code) and Scratch Mode (Just Scratch)
-- Bluetooth: For Programming Otto in Scratch Mode only
+
 #### Serial
 mBlock -> Connect/Serial -> Select Robot connecting COM Port
-#### Bluetooth
-- Pairing your HC06 with Computer in Bluetooth
-- mBlock -> Connect/Bluetooth/Clear Bluetooth -> Discover Bluetooth -> Select right name of HC06 (may be Otto or Zowi...up to you named it)
+
 ### Programming
 #### Arduino Mode
-Scartch Program will be convert to Arduino Code then Upload to Robot as Firmware, the program now run by Robot itself
+Scartch Program will auto generate Arduino Code then Upload to Robot as Firmware, the program now run onboard inside the Robot 
+#### How to upload
  - mBlock -> Edit/Arduino Mode: the Arduino Script Area will appear, after programming in Scratch, Select Upload to Arduino to upload the firmware, the mBlock will compile the programming and upload to Robot.
  - mBlock -> Board -> Select Arduino Nano (Mega328)
  - After Upload, the Otto will not able to run in Scratch mode until the compatible firmware is pre-Uploaded
@@ -65,7 +61,8 @@ Scratch Program run in mBlock Software, the command (Scratch blocks) will be sen
 - For Using Scratch Mode in Serial (recommend): Pre-Upload example: https://github.com/stembotvn/OttoDIY_Vbot/tree/master/examples/Otto_Mblock_ScratchMode_Serial
 
 The Scratch Mode will fully compatible with Original Scratch 2.0 by MIT, So you can create Desktop Interface, Game, Music, Sound,....Combine with programming Otto Robot, it is really Fun. 
-### NOTE: this Scratch mode now just available for Moving block, Gesture block, Sing block, other blocks just run in Arduino mode.
+### NOTE: Version 2.4 full all of functions only work in Arduino Mode of mBlock (code in Scratch, mBLock automatically generate to Arduino code)
+
 
 
     
