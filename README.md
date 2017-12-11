@@ -5,11 +5,15 @@ Download and install mBlock Software: http://www.mblock.cc/
 ## OttoDIY 
    A BiPedal Robot is very Fun and wonderful opensource project. http://www.ottodiy.com/
    You can build your own and teach your kids programming Scratch for Otto Robot using this Extension 
+   <img src="media/Otto" width="900" align="center">
+
 ## WHAT NEWS WITH OTTO mBLOCK in SCRATCH languague with this Extension OttoDiy 2.4:
    ### Otto can response sound, can follow the light, can read 2 buttons, can send and receive data to Computer via Serial port   
    ### Added LED MAtrix mouth for emotion 
    ### Added play melody with Buzzer
 ## Hardware (Basically same OttoDIY++ project)
+<img src="media/connection.png" width="900" align="center">
+
 - connect Servo Hip left to D2
 - Connect Servo Foot Left to D4
 - Connect Servo Hip right to D3
