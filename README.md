@@ -5,30 +5,34 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
 ## OttoDIY 
    A BiPedal Robot is very Fun and wonderful opensource project. http://www.ottodiy.com/
    You can build your own and teach your kids programming Scratch for Otto Robot using this Extension 
-   <img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/Otto.png" width="900" align="center">
+   <img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/Otto.png" width="500" align="center">
 ## WHAT NEWS WITH OTTODIY in mBlock Extension V2.4
    ### Otto can response sound, can follow the light, can read 2 buttons, can send and receive data to Computer via Serial port   
    ### Added LED MAtrix mouth for emotion 
    ### Added play melody with Buzzer
 # Hardware Connection (NOTE THAT THIS IS ADVANCED FUNCTIONS VERSION, THE DIAGRAM IS DIFFERENT THAN CLASSIC VERSION
-<img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/connection.png" width="900" align="center">
-- connect Servo Hip left to D2
-- Connect Servo Foot Left to D4
-- Connect Servo Hip right to D3
-- COnnect Servo Foot Right to D5
-- Buzzer to D13 (Active High)
-- HC06Rx to Arduino (D7)
-- HO06Tx to Arduino (D6)
-- SRF04 Trigger to D8
-- SRF04 Echo    To D9
-- Max7219   DATA    D10   For LED Matrix emotion
-- Max7219   CS    D11     For LED Matrix emotion
-- Max7219  CLK    D12     For LED Matrix emotion
-- Sound Sensor  to analog A6, 
-- Light sensor Left to analog A1
-- Light Sensor Right to analog A0
-- Button 1    to A2 in pull up input (low active: connect A2 to Gnd) 
-- Button 2    to A3 in pull up input(low active: connect A3 to Gnd)
+<img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/connection.png" width="500" align="center">
+
+ |  Component             | Arduino Pin |
+ | --- | --- |
+ |  Servo Hip left        | D2          |
+ |  Servo Foot Left       | D4          |
+ |  Servo Hip right       | D3          |
+ |  Servo Foot right| D5|
+ |  Buzzer          | D13|
+ |Bluetooth HC06 Rx | D7|
+ |Bluetooth HC06 Tx | D6|
+ |SRF04 Trigger     | D8|
+ |SRF04 Echo        | D9|
+ |Max7219 LedMatrix Data | D10|
+ |Max7219 LedMatrix CS   | D11|
+ |Max7219 LedMatrix Clk  | D12|
+ |Analog Sound Sensor Module|A6|
+ |Button 1                  |A2|
+ |Button 2                  |A3|
+ |Light sensor Module (RIGHT) Analog output Pin|A0|
+ |Light Sensor Module (LEFT) Analog output Pin|A1|
+
 - Refer the My Arduino Library using in Extension for Detail: https://github.com/stembotvn/OttoDIY_Vbot
 ## Installation Extension in mBlock software
 ### Quick Installation
