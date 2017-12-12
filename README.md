@@ -35,38 +35,10 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
 
 ## Getting Started Learning to Code with Scratch, Great Starting for Kids and Beginner
    Refer to Wiki Page: https://github.com/stembotvn/OttoDIY_mBlock_Extension/wiki 
-## Installation Extension in mBlock software
-### Quick Installation
-- mBlock -> Extensions/Manage Extension/Search, type name: "ottoDIY" by Hien Phan, click download. It will work. 
-See Video: https://www.youtube.com/watch?v=lPDUmW9uHto
-### Manual Installation
-   - Download this repository in Zip file format
-   - Open the Mblock software, go to the Extensions / Manage Extensions tab -> Click "Add Extension" -> Browsing to the path of downloaded file
-   - Note: Select Zip file (Not Json file), the downloaded Zip file will appear. 
-   - Test simple program
-## Using
-### Connect
-- Serial: For Programming Otto in Arduino mode (Scratch Convert to Arduino code) and Scratch Mode (Just Scratch)
+   
+   See video how to install Otto Extension in mBlock software
+   https://www.youtube.com/watch?v=lPDUmW9uHto
 
-#### Serial
-mBlock -> Connect/Serial -> Select Robot connecting COM Port
-
-### Programming
-#### Arduino Mode
-Scartch Program will auto generate Arduino Code then Upload to Robot as Firmware, the program now run onboard inside the Robot 
-#### How to upload
- - mBlock -> Edit/Arduino Mode: the Arduino Script Area will appear, after programming in Scratch, Select Upload to Arduino to upload the firmware, the mBlock will compile the programming and upload to Robot.
- - mBlock -> Board -> Select Arduino Nano (Mega328)
- - After Upload, the Otto will not able to run in Scratch mode until the compatible firmware is pre-Uploaded
-#### Scratch Mode
-Scratch Program run in mBlock Software, the command (Scratch blocks) will be sent to Robot to sync the Robot activity.
-- The PC need keep on connecting with Robot Otto 
-- Otto need to pre-upload by the appropreate firmware depend on using Serial or Bluetooth Connection:
-- Library to pre-upload code to Otto for using Scratch mode (must use Arduino IDE to implement): https://github.com/stembotvn/OttoDIY_Vbot
-- For Using Scratch Mode in Bluetooth: Pre- Upload example https://github.com/stembotvn/OttoDIY_Vbot/tree/master/examples/Otto_BT_ZowiAPP
-- For Using Scratch Mode in Serial (recommend): Pre-Upload example: https://github.com/stembotvn/OttoDIY_Vbot/tree/master/examples/Otto_Mblock_ScratchMode_Serial
-
-The Scratch Mode will fully compatible with Original Scratch 2.0 by MIT, So you can create Desktop Interface, Game, Music, Sound,....Combine with programming Otto Robot, it is really Fun. 
 ### NOTE: Version 2.4 full all of functions only work in Arduino Mode of mBlock (code in Scratch, mBLock automatically generate to Arduino code)
 
 
