@@ -33,7 +33,8 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
  |Light sensor Module (RIGHT) Analog output Pin|A0|
  |Light Sensor Module (LEFT) Analog output Pin|A1|
 
-- Refer the My Arduino Library using in Extension for Detail: https://github.com/stembotvn/OttoDIY_Vbot
+## Getting Started Learning to Code with Scratch, Great Starting for Kids and Beginner
+   Refer to Wiki Page: https://github.com/stembotvn/OttoDIY_mBlock_Extension/wiki 
 ## Installation Extension in mBlock software
 ### Quick Installation
 - mBlock -> Extensions/Manage Extension/Search, type name: "ottoDIY" by Hien Phan, click download. It will work. 
