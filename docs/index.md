@@ -11,7 +11,7 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
    ### Added LED MAtrix mouth for emotion 
    ### Added play melody with Buzzer
 # Hardware Connection (NOTE THAT THIS IS ADVANCED FUNCTIONS VERSION, THE DIAGRAM IS DIFFERENT THAN CLASSIC VERSION
-<img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/connection.png" width="500" align="center">
+![Alt Text](https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/connection.png)
 
  |  Component             | Arduino Pin |
  | --- | --- |
@@ -34,7 +34,7 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
  |Light Sensor Module (LEFT) Analog output Pin|A1|
 
 ## Getting Started Learning to Code with Scratch, Great Starting for Kids and Beginner
-   Refer to Wiki Page: https://github.com/stembotvn/OttoDIY_mBlock_Extension/wiki 
+   Refer to Wiki Page: [Wiki Page] (https://github.com/stembotvn/OttoDIY_mBlock_Extension/wiki)
    
    See video how to install Otto Extension in mBlock software
    https://www.youtube.com/watch?v=lPDUmW9uHto
