@@ -39,7 +39,7 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
    See video how to install Otto Extension in mBlock software
    https://www.youtube.com/watch?v=lPDUmW9uHto
 
-### NOTE: Version 2.4 full all of functions only work in Arduino Mode of mBlock (code in Scratch, mBLock automatically generate to Arduino code)
+### NOTE: Version 2.6 full all of functions only work in Arduino Mode of mBlock (code in Scratch, mBLock automatically generate to Arduino code)
 Have Fun learning with Otto robot!
 
 
