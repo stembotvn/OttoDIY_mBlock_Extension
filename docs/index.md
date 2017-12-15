@@ -1,9 +1,9 @@
 # OttoDIY_mBlock_Extension
 Mblock is a software that allows Programming in Scratch Language for robots,Release by MakeBlocks, inherited from Scratch 2.0 by MIT. Extension is a set of files that allows you to install blocks for different types of robots to compatible with mBlock Environment
-Download and install mBlock Software: http://www.mblock.cc/software/mblock/mblock3/
+Download and install mBlock Software: [mBlock Download] (http://www.mblock.cc/software/mblock/mblock3/)
 
 ## OttoDIY 
-   A BiPedal Robot is very Fun and wonderful opensource project. http://www.ottodiy.com/
+   A BiPedal Robot is very Fun and wonderful opensource project. (Otto DIY] (http://www.ottodiy.com/)
    You can build your own and teach your kids programming Scratch for Otto Robot using this Extension 
    <img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/Otto.png" width="500" align="center">
 ## WHAT NEWS WITH OTTODIY in mBlock Extension V2.4
