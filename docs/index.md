@@ -11,7 +11,7 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
    ### Added LED MAtrix mouth for emotion 
    ### Added play melody with Buzzer
 # Hardware Connection (NOTE THAT THIS IS ADVANCED FUNCTIONS VERSION, THE DIAGRAM IS DIFFERENT THAN CLASSIC VERSION
-![Alt Text](https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/connection.png)
+![Alt Text](media/connection.png)
 
  |  Component             | Arduino Pin |
  | --- | --- |
