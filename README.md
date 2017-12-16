@@ -38,6 +38,18 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
    
    See video how to install Otto Extension in mBlock software
    https://www.youtube.com/watch?v=lPDUmW9uHto
+   
+## Online Doccumentation for setup Open Classroom to teach kids coding Scratch for Otto
+We are building the online doccument with SphinX docs via ReadtheDocs Platform. All in progress. 
+
+http://ottolearning.rtfd.io/
+
+The sourcecode of online doccument is host in github:
+
+https://github.com/stembotvn/OttoLearning
+
+Forked, build and make a pull request if you want to contribute with me to build the doccument if you familiar with Sphinx docs. 
+
 
 ### NOTE: Version 2.6 full all of functions only work in Arduino Mode of mBlock (code in Scratch, mBLock automatically generate to Arduino code)
 Have Fun learning with Otto robot!
