@@ -56,6 +56,6 @@ Forked, build and make a pull request if you want to contribute with me to build
 ### NOTE: Version 2.6 full all of functions only work in Arduino Mode of mBlock (code in Scratch, mBLock automatically generate to Arduino code)
 Have Fun learning with Otto robot!
 
-
+## THERE IS A BUG FOUND WITH EXTENSION IN MBLOCK, IF YOU NEED TO SWITCH OVER EXTENSION OF MANY EXTENSIONS, PLEASE CLEAR CACHE IN MANAGE EXTENSION FIRST FOR WORKING WELL WITH MY EXTENSION
 
     
