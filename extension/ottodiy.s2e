@@ -1,7 +1,7 @@
 {
 	"extensionName": "ottodiy",
 	"description": "ottodiy Extension",
-	"version": "2.6",
+	"version": "2.7",
 	"author": "Hien Phan",
 	"homepage": "https://github.com/stembotvn/OttoDIY_mBlock_Extension",
 	"sort": 0,
@@ -16,7 +16,7 @@
 			"runArduino",
 			{
 				"setup": "Vbot.init(HIP_L, HIP_R, FOOT_L, FOOT_R, false, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);\n Vbot.home();\n Vbot.sing(S_connection);\n",
-				"inc": "#include \"Otto.h\"\n#include <Servo.h>\n",
+				"inc": "#include <Servo.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Vbot;\n",
 				"work": "",
 				"loop": ""
