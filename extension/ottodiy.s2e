@@ -7,16 +7,16 @@
 	"javascriptURL": "js/OttoV.js",
 	"firmware": "1.0",
 	"extensionPort": 0,
-	"tags": "Otto,Vbot",
+	"tags": "Otto,Ottobot",
 	"blockSpecs": [
 		[
 			"h",
 			"Otto Program",
 			"runArduino",
 			{
-				"setup": "Vbot.init(HIP_L, HIP_R, FOOT_L, FOOT_R, false, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);\n Vbot.home();\n Vbot.sing(S_connection);\n",
+				"setup": "Ottobot.init(HIP_L, HIP_R, FOOT_L, FOOT_R, false, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);\n Ottobot.home();\n Ottobot.sing(S_connection);\n",
 				"inc": "#include <Servo.h>\n #include \"Otto.h\"\n",
-				"def": "Otto Vbot;\n",
+				"def": "Otto Ottobot;\n",
 				"work": "",
 				"loop": ""
 			}
@@ -32,7 +32,7 @@
 				"setup": "",
 				"inc": "",
 				"def": "",
-				"work": "Vbot.move({0},{1},{2});\n",
+				"work": "Ottobot.move({0},{1},{2});\n",
 				"loop": ""
 			}
 		],
@@ -46,7 +46,7 @@
 				"setup": "",
 				"inc": "",
 				"def": "",
-				"work": "Vbot.playGesture({0});\n",
+				"work": "Ottobot.playGesture({0});\n",
 				"loop": ""
 			}
 		],
@@ -60,7 +60,7 @@
 				"setup": "",
 				"inc": "",
 				"def": "",
-				"work": "Vbot.sing({0});\n",
+				"work": "Ottobot.sing({0});\n",
 				"loop": ""
 			}
 		],
@@ -74,7 +74,7 @@
 				"setup": "",
 				"inc": "",
 				"def": "",
-				"work": "Vbot._playNote({0},{1});\n",
+				"work": "Ottobot._playNote({0},{1});\n",
 				"loop": ""
 			}
 		],
@@ -88,7 +88,7 @@
 				"setup": "",
 				"inc": "",
 				"def": "",
-				"work": "Vbot.putMouth({0});\n",
+				"work": "Ottobot.putMouth({0});\n",
 				"loop": ""
 			}
 		],
@@ -102,7 +102,7 @@
 				"setup": "",
 				"inc": "",
 				"def": "",
-				"work": "Vbot.putAnimationMouth({0},{1});\n",
+				"work": "Ottobot.putAnimationMouth({0},{1});\n",
 				"loop": ""
 			}
 		],
@@ -114,7 +114,7 @@
 				"setup": "",
 				"inc": "",
 				"def": "",
-				"work": "Vbot.clearMouth();\n",
+				"work": "Ottobot.clearMouth();\n",
 				"loop": ""
 			}
 		],
@@ -126,7 +126,7 @@
 				"setup": "",
 				"inc": "",
 				"def": "",
-				"work": "Vbot.getDistance()",
+				"work": "Ottobot.getDistance()",
 				"loop": ""
 			}
 		],
@@ -138,7 +138,7 @@
 				"setup": "",
 				"inc": "",
 				"def": "",
-				"work": "Vbot.getNoise()",
+				"work": "Ottobot.getNoise()",
 				"loop": ""
 			}
 		],

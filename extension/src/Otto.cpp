@@ -614,7 +614,16 @@ void Otto::putMouth(unsigned long int mouth, bool predefined){
     ledmatrix.writeFull(mouth);
   }
 }
+////
+void Otto::putMouth(unsigned long int mouth, bool predefined){
 
+  if (predefined){
+      ledmatrix.writeFull(getMouthShape(mouth));
+   }
+  else{
+    ledmatrix.writeFull(mouth);
+  }
+}
 
 void Otto::clearMouth(){
 
