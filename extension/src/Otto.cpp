@@ -22,14 +22,14 @@ void Otto::init(int YL, int YR, int RL, int RR, bool load_calibration, int Noise
 
   attachServos();
   isOttoResting=false;
-/*
+
   if (load_calibration) {
     for (int i = 0; i < 4; i++) {
       int servo_trim = EEPROM.read(i);
       if (servo_trim > 128) servo_trim -= 256;
       servo[i].SetTrim(servo_trim);
     }
-  } */
+  } 
   
   for (int i = 0; i < 4; i++) servo_position[i] = 90;
 
@@ -68,12 +68,13 @@ void Otto::detachServos(){
 ///////////////////////////////////////////////////////////////////
 //-- OSCILLATORS TRIMS ------------------------------------------//
 ///////////////////////////////////////////////////////////////////
-/*
+
 void Otto::setTrims(int YL, int YR, int RL, int RR) {
   servo[0].SetTrim(YL);
   servo[1].SetTrim(YR);
   servo[2].SetTrim(RL);
   servo[3].SetTrim(RR);
+  calib_homePos(YL,YR,RL,RR);
 }
 
 void Otto::saveTrimsOnEEPROM() {
@@ -83,7 +84,7 @@ void Otto::saveTrimsOnEEPROM() {
   } 
       
 }
-*/
+
 
 ///////////////////////////////////////////////////////////////////
 //-- BASIC MOTION FUNCTIONS -------------------------------------//
@@ -110,7 +111,18 @@ void Otto::_moveServos(int time, int  servo_target[]) {
   }
   for (int i = 0; i < 4; i++) servo_position[i] = servo_target[i];
 }
+//////
+void Otto::calib_homePos(int S0,int S1,int S2,int S3)
+{
+  int servoPos[4];
+  servoPos[0]=90+S0;
+  servoPos[1]=90+S1;
+  servoPos[2]=90+S2;
+  servoPos[3]=90+S3;
+  _moveServos(500,servoPos);
+  detachServos();
 
+}
 
 void Otto::oscillateServos(int A[4], int O[4], int T, double phase_diff[4], float cycle=1){
 
@@ -604,16 +616,6 @@ void Otto::putAnimationMouth(unsigned long int aniMouth, int index){
       ledmatrix.writeFull(getAnimShape(aniMouth,index));
 }
 
-
-void Otto::putMouth(unsigned long int mouth, bool predefined){
-
-  if (predefined){
-    ledmatrix.writeFull(getMouthShape(mouth));
-  }
-  else{
-    ledmatrix.writeFull(mouth);
-  }
-}
 ////
 void Otto::putMouth(unsigned long int mouth, bool predefined){
 

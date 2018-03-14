@@ -28,8 +28,6 @@ SoftSerialCommand::SoftSerialCommand(SoftwareSerial &SoftSer)
 	clearBuffer(); 
 }
 
-
-
 //
 // Initialize the command buffer being processed to all null characters
 //

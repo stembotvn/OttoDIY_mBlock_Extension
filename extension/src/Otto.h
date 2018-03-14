@@ -3,7 +3,7 @@
 
 #include <Servo.h>
 #include "Oscillator.h"
-//#include <EEPROM.h>
+#include <EEPROM.h>
 
 #include "US.h"
 #include "MaxMatrix.h"
@@ -51,11 +51,13 @@ class Otto
     void detachServos();
 
     //-- Oscillator Trims
-    //  void setTrims(int YL, int YR, int RL, int RR);
-    // void saveTrimsOnEEPROM();
+     void setTrims(int YL, int YR, int RL, int RR);
+     void saveTrimsOnEEPROM();
 
     //-- Predetermined Motion Functions
+
     void _moveServos(int time, int  servo_target[]);
+    void calib_homePos(int S0,int S1,int S2,int S3);
     void oscillateServos(int A[4], int O[4], int T, double phase_diff[4], float cycle);
 
     //-- HOME = Otto at rest position
@@ -90,7 +92,7 @@ class Otto
     double getBatteryVoltage();
     
     //-- Mouth & Animations
-    void putMouth(unsigned long int mouth, bool predefined = true);
+    void putMouth(unsigned long int mouth,bool predefined = true);
     void putAnimationMouth(unsigned long int anim, int index);
     void clearMouth();
  
