@@ -1,7 +1,7 @@
 {   "extensionName": "ottodiy",
 	"description": "ottodiy Extension",
 	"version": "3.4",
-	"author": "Hien Phan",
+	"author": "STEMbot.vn",
 	"homepage": "https://github.com/stembotvn/OttoDIY_mBlock_Extension",
 	"sort": 0,
 	"javascriptURL": "js/OttoV.js",
