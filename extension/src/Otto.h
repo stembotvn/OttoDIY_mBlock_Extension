@@ -3,7 +3,7 @@
 
 #include <Servo.h>
 #include "Oscillator.h"
-//#include <EEPROM.h>
+#include <EEPROM.h>
 
 #include "US.h"
 #include "MaxMatrix.h"
@@ -90,7 +90,7 @@ class Otto
     double getBatteryVoltage();
     
     //-- Mouth & Animations
-    void putMouth(unsigned long int mouth, bool predefined = true);
+    void putMouth(unsigned long int mouth,bool predefined = true);
     void putAnimationMouth(unsigned long int anim, int index);
     void clearMouth();
  
