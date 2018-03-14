@@ -68,7 +68,7 @@ void Otto::detachServos(){
 ///////////////////////////////////////////////////////////////////
 //-- OSCILLATORS TRIMS ------------------------------------------//
 ///////////////////////////////////////////////////////////////////
-/*
+
 void Otto::setTrims(int YL, int YR, int RL, int RR) {
   servo[0].SetTrim(YL);
   servo[1].SetTrim(YR);
@@ -83,7 +83,7 @@ void Otto::saveTrimsOnEEPROM() {
   } 
       
 }
-*/
+
 
 ///////////////////////////////////////////////////////////////////
 //-- BASIC MOTION FUNCTIONS -------------------------------------//
@@ -604,16 +604,6 @@ void Otto::putAnimationMouth(unsigned long int aniMouth, int index){
       ledmatrix.writeFull(getAnimShape(aniMouth,index));
 }
 
-
-void Otto::putMouth(unsigned long int mouth, bool predefined){
-
-  if (predefined){
-    ledmatrix.writeFull(getMouthShape(mouth));
-  }
-  else{
-    ledmatrix.writeFull(mouth);
-  }
-}
 ////
 void Otto::putMouth(unsigned long int mouth, bool predefined){
 
