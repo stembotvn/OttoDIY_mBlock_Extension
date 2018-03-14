@@ -55,7 +55,9 @@ class Otto
      void saveTrimsOnEEPROM();
 
     //-- Predetermined Motion Functions
+
     void _moveServos(int time, int  servo_target[]);
+    void calib_homePos(int S0,int S1,int S2,int S3);
     void oscillateServos(int A[4], int O[4], int T, double phase_diff[4], float cycle);
 
     //-- HOME = Otto at rest position
