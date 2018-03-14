@@ -51,8 +51,8 @@ class Otto
     void detachServos();
 
     //-- Oscillator Trims
-    //  void setTrims(int YL, int YR, int RL, int RR);
-    // void saveTrimsOnEEPROM();
+     void setTrims(int YL, int YR, int RL, int RR);
+     void saveTrimsOnEEPROM();
 
     //-- Predetermined Motion Functions
     void _moveServos(int time, int  servo_target[]);

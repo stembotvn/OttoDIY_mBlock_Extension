@@ -1,6 +1,6 @@
 {   "extensionName": "ottodiy",
 	"description": "ottodiy Extension",
-	"version": "3.3",
+	"version": "3.4",
 	"author": "Hien Phan",
 	"homepage": "https://github.com/stembotvn/OttoDIY_mBlock_Extension",
 	"sort": 0,
@@ -14,10 +14,26 @@
 			"Otto Program",
 			"runArduino",
 			{
-				"setup": "Ottobot.init(HIP_L, HIP_R, FOOT_L, FOOT_R, false, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);\n Ottobot.home();\n Ottobot.sing(S_connection);\n",
+				"setup": "Ottobot.init(HIP_L, HIP_R, FOOT_L, FOOT_R, true, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);\n Ottobot.home();\n Ottobot.sing(S_connection);\n",
 				"inc": "#include <Servo.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
 				"work": "",
+				"loop": ""
+			}
+		],
+		[
+			"w",
+			"Set Calibrate Left Leg: %n Right Leg %n Left Foot %n Right Foot %n",
+			"setTrim",
+			"0",
+			"0",
+			"0",
+			"0", 
+			{
+				"setup": "",
+				"inc": "",
+				"def": "",
+				"work": "Ottobot.setTrims({0},{1},{2},{3});\nOttobot.saveTrimsOnEEPROM();\n",
 				"loop": ""
 			}
 		],
