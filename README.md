@@ -42,6 +42,10 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
    See video how to install Otto Extension in mBlock software
    https://www.youtube.com/watch?v=lPDUmW9uHto
    
+## How to calibration Otto Legs
+As you know, it is difficult to install Servos with accurate angle home, So we need an tool to calibrate by software. 
+From Version 3.5, We added calibrate block and make Calibration demo program so Makers can easily calibrate even inside mBlock software via Serial port. 
+
 ## Online Doccumentation for setup Open Classroom to teach kids coding Scratch for Otto
 We are building the online doccument with SphinX docs via ReadtheDocs Platform. All in progress. 
 
