@@ -77,7 +77,7 @@ void Otto::setTrims(int YL, int YR, int RL, int RR) {
   servo[1].SetTrim(YR);
   servo[2].SetTrim(RL);
   servo[3].SetTrim(RR);
-  calib_homePos(YL,YR,RL,RR);
+  calib_homePos();
 }
 
 void Otto::saveTrimsOnEEPROM() {
@@ -116,13 +116,18 @@ void Otto::_moveServos(int time, int  servo_target[]) {
   for (int i = 0; i < 4; i++) servo_position[i] = servo_target[i];
 }
 //////
-void Otto::calib_homePos(int S0,int S1,int S2,int S3)
+void Otto::calib_homePos()
 {
   int servoPos[4];
+  /*
   servoPos[0]=90+S0;
   servoPos[1]=90+S1;
   servoPos[2]=90+S2;
-  servoPos[3]=90+S3;
+  servoPos[3]=90+S3;*/
+   servoPos[0]=90;
+  servoPos[1]=90;
+  servoPos[2]=90;
+  servoPos[3]=90;
   _moveServos(500,servoPos);
   detachServos();
 
@@ -171,7 +176,8 @@ void Otto::_execute(int A[4], int O[4], int T, double phase_diff[4], float steps
 ///////////////////////////////////////////////////////////////////
 void Otto::home(){
 
-  if(isOttoResting==false){ //Go to rest position only if necessary
+  if(isOttoResting==false)
+      { //Go to rest position only if necessary
 
     int homes[4]={90, 90, 90, 90}; //All the servos at rest position
     _moveServos(500,homes);   //Move the servos in half a second
