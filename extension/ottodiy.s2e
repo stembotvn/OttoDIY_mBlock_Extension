@@ -14,7 +14,7 @@
 			"Otto Program",
 			"runArduino",
 			{
-				"setup": "Ottobot.init(HIP_L, HIP_R, FOOT_L, FOOT_R, true, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);\n Ottobot.home();\n Ottobot.sing(S_connection);\n",
+				"setup": "Serial.begin(115200);\nOttobot.init(HIP_L, HIP_R, FOOT_L, FOOT_R, true, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);\n Ottobot.home();\n Ottobot.sing(S_connection);\n",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
 				"work": "",
