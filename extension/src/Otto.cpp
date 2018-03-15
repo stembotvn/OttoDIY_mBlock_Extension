@@ -22,13 +22,15 @@ void Otto::init(int YL, int YR, int RL, int RR, bool load_calibration, int Noise
 
   attachServos();
   isOttoResting=false;
-
+  Serial.println("Loading calibration data...");
   if (load_calibration) {
     for (int i = 0; i < 4; i++) {
       int servo_trim = EEPROM.read(i);
       if (servo_trim > 128) servo_trim -= 256;
       servo[i].SetTrim(servo_trim);
+      Serial.print(servo_trim);Serial.print(" - ");
     }
+    Serial.println("..Loaded!");
   } 
   
   for (int i = 0; i < 4; i++) servo_position[i] = 90;
@@ -78,11 +80,12 @@ void Otto::setTrims(int YL, int YR, int RL, int RR) {
 }
 
 void Otto::saveTrimsOnEEPROM() {
-  
+  Serial.print("Save Trims: ")
   for (int i = 0; i < 4; i++){ 
       EEPROM.write(i, servo[i].getTrim());
+      Serial.print(servo[i].getTrim());Serial.print(" - ")
   } 
-      
+      Serial.println(" Saved!")
 }
 
 
