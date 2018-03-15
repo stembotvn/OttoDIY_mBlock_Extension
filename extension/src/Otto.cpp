@@ -83,9 +83,9 @@ void Otto::saveTrimsOnEEPROM() {
   Serial.print("Save Trims: ")
   for (int i = 0; i < 4; i++){ 
       EEPROM.write(i, servo[i].getTrim());
-      Serial.print(servo[i].getTrim());Serial.print(" - ")
+      Serial.print(servo[i].getTrim());Serial.print(" - ");
   } 
-      Serial.println(" Saved!")
+      Serial.println(" Saved!");
 }
 
 
