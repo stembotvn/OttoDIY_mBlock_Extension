@@ -34,7 +34,8 @@ void Otto::init(int YL, int YR, int RL, int RR, bool load_calibration, int Noise
   } 
   
   for (int i = 0; i < 4; i++) servo_position[i] = 90;
-
+  _moveServos(500,servo_position);
+  detachServos();
   //US sensor init with the pins:
   us.init(USTrigger, USEcho);
 
@@ -80,7 +81,7 @@ void Otto::setTrims(int YL, int YR, int RL, int RR) {
 }
 
 void Otto::saveTrimsOnEEPROM() {
-  Serial.print("Save Trims: ")
+  Serial.print("Save Trims: ");
   for (int i = 0; i < 4; i++){ 
       EEPROM.write(i, servo[i].getTrim());
       Serial.print(servo[i].getTrim());Serial.print(" - ");
