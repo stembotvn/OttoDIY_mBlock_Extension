@@ -215,7 +215,7 @@ void MaxMatrix::shiftDown(bool rotate)
 void MaxMatrix::writeFull(unsigned long value) {
 	for (int r=0; r<5;r++){
             for (int c=0; c<6; c++){
-                setDot(6-c,7-r,(1L & (value >> r*6+c)));
+                setDot(6-c,r,(1L & (value >> r*6+c)));
                 }
             }
 }
