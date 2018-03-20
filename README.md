@@ -7,12 +7,14 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
    You can build your own and teach your kids programming Scratch for Otto Robot using this Extension 
    <img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/Otto.png" width="250" align="center">
 
-## WHAT NEWS WITH OTTODIY in mBlock Extension V3.1
-   ### Otto can response sound, can follow the light, can read 2 buttons, can send and receive data to Computer via Serial port   
-   ### Added LED MAtrix mouth for emotion 
-   ### Added play melody with Buzzer
-   ### More Language: Italiano, Brasilian Portuguese Language, French, Spanish... and will be more with community contribution. 
-   
+## WHAT NEWS WITH OTTODIY in mBlock Extension from V3.1
+- Otto can response sound, can follow the light, can read 2 buttons, can send and receive data to Computer via Serial port   
+- Added LED MAtrix mouth for emotion 
+- Added play melody with Buzzer
+- More Language: Italiano, Brasilian Portuguese Language, French, Spanish... and will be more with community contribution. 
+### From V3.6
+- Added Calibration blocks for install Otto Servos easier 
+- Added Examples with Otto Calibrating Servos on PC via Serial Port
 # Hardware Connection (NOTE THAT THIS IS ADVANCED FUNCTIONS VERSION, THE DIAGRAM IS DIFFERENT THAN CLASSIC VERSION
 <img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/connection.png" width="500" align="center">
 
