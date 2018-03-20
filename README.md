@@ -1,20 +1,20 @@
 # OttoDIY_mBlock_Extension
-Mblock is a software that allows Programming in Scratch Language for robots,Release by MakeBlocks, inherited from Scratch 2.0 by MIT. Extension is a set of files that allows you to install blocks for different types of robots to compatible with mBlock Environment
+Mblock is a software that allows Programming in Scratch Language for robots,Release by Makeblock, inherited from Scratch 2.0 by MIT. Extension is a set of files that allows you to install blocks for different types of robots to compatible with mBlock Environment
 Download and install mBlock Software: http://www.mblock.cc/software/mblock/mblock3/
 
 ## OttoDIY 
    A BiPedal Robot is very Fun and wonderful opensource project. http://www.ottodiy.com/
    You can build your own and teach your kids programming Scratch for Otto Robot using this Extension 
-   <img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/Otto.png" width="250" align="center">
+   <img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/Otto.png" width="150" align="center">
 
 ## WHAT NEWS WITH OTTODIY in mBlock Extension V3.1
-   ### Otto can response sound, can follow the light, can read 2 buttons, can send and receive data to Computer via Serial port   
-   ### Added LED MAtrix mouth for emotion 
+   ### Otto can response sound, can follow the light, can read 3 touch sensors buttons, can send and receive data to Computer via Serial port   
+   ### Added LED Matrix mouth for emotion 
    ### Added play melody with Buzzer
    ### More Language: Italiano, Brasilian Portuguese Language, French, Spanish... and will be more with community contribution. 
    
 # Hardware Connection (NOTE THAT THIS IS ADVANCED FUNCTIONS VERSION, THE DIAGRAM IS DIFFERENT THAN CLASSIC VERSION
-<img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/connection.png" width="500" align="center">
+<img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/connection.png" width="400" align="center">
 
  |  Component             | Arduino Pin |
  | --- | --- |
@@ -59,7 +59,6 @@ https://github.com/stembotvn/OttoLearning
 
 Forked, build and make a pull request if you want to contribute with me to build the doccument if you familiar with Sphinx docs. 
 
-
 ### NOTE: Version 2.6 full all of functions only work in Arduino Mode of mBlock (code in Scratch, mBLock automatically generate to Arduino code)
 Have Fun learning with Otto robot!
 
@@ -67,4 +66,3 @@ Have Fun learning with Otto robot!
 
 ## Our Laser Cut Design version 
    https://github.com/stembotvn/OttoLaserCutDesign
-    
