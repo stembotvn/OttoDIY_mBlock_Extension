@@ -7,7 +7,7 @@ Download and install mBlock Software: http://www.mblock.cc/software/mblock/mbloc
    You can build your own and teach your kids programming Scratch for Otto Robot using this Extension 
    <img src="https://github.com/stembotvn/OttoDIY_mBlock_Extension/blob/master/media/Otto.png" width="150" align="center">
 
-## WHAT NEWS WITH OTTODIY in mBlock Extension V3.1
+## UPDATES for Otto DIY in mBlock Extension V3.1:
    ### Otto can response sound, can follow the light, can read 3 touch sensors buttons, can send and receive data to Computer via Serial port   
    ### Added LED Matrix mouth for emotion 
    ### Added play melody with Buzzer
@@ -50,11 +50,9 @@ From Version 3.5, We added calibration block and make Calibration demo program s
 
 ## Online Doccumentation for setup Open Classroom to teach kids coding Scratch for Otto
 We are building the online doccument with SphinX docs via ReadtheDocs Platform. All in progress. 
-
 http://ottolearning.rtfd.io/
 
 The sourcecode of online doccument is host in github:
-
 https://github.com/stembotvn/OttoLearning
 
 Forked, build and make a pull request if you want to contribute with me to build the doccument if you familiar with Sphinx docs. 
