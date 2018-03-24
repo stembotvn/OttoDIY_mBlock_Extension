@@ -31,7 +31,7 @@
 #define PIN_Buzzer  13
 #define PIN_Trigger 8
 #define PIN_Echo    9
-#define PIN_NoiseSensor A6
+#define PIN_NoiseSensor 6 //Analog Pin 6
 ///define Bluetooth in SoftwareSerial 
 #define BT_Rx   6  
 #define BT_Tx   7
