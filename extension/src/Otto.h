@@ -45,7 +45,8 @@ class Otto
   public:
     //-- Otto initialization
     void init(int YL, int YR, int RL, int RR, bool load_calibration=true, int NoiseSensor=PIN_NoiseSensor, int Buzzer=PIN_Buzzer, int USTrigger=PIN_Trigger, int USEcho=PIN_Echo);
-
+    void initMatrix(int MaxDin,int MaxCS,int MaxClk)
+     {Max7219_Din=MaxDin;Max7219_Cs=MaxCS;Max7219_Clk=MaxClk;}
     //-- Attach & detach functions
     void attachServos();
     void detachServos();
@@ -108,12 +109,14 @@ class Otto
  
   private:
     
-    MaxMatrix ledmatrix=MaxMatrix(PIN_DIN,PIN_CS,PIN_CLK, 1);  // init Max7219 LED Matrix, 1 module
-
+    MaxMatrix ledmatrix=MaxMatrix(Max7219_Din,Max7219_Cs,Max7219_Clk, 1);  // init Max7219 LED Matrix, 1 module
+    
     BatReader battery;
     Oscillator servo[4];
     US us;
-
+    int Max7219_Din = PIN_DIN;
+    int Max7219_Cs = PIN_CS;
+    int Max7219_Clk = PIN_CLK;
     int servo_pins[4];
     int servo_trim[4];
     int servo_position[4];

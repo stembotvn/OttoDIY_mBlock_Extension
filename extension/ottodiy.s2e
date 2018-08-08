@@ -14,10 +14,46 @@
 			"Otto Program",
 			"runArduino",
 			{
-				"setup": "Serial.begin(115200);\nOttobot.init(HIP_L, HIP_R, FOOT_L, FOOT_R, true, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);\n Ottobot.home();\n Ottobot.sing(S_connection);\n",
+				"setup": "",
+				"inc": "",
+				"def": "",
+				"work": "",
+				"loop": ""
+			}
+		],
+		init(int YL, int YR, int RL, int RR, bool load_calibration=true, int NoiseSensor=PIN_NoiseSensor, int Buzzer=PIN_Buzzer, int USTrigger=PIN_Trigger, int USEcho=PIN_Echo);
+		[
+			"w",
+			"Otto init :LegLeft Pin  %n LegRight Pin %n LeftFoot Pin %n RightFoot Pin %n Noise Sensor Pin A%n  BuzzerPin %n SRF04 Trig %n SRF04 Echo %n",
+			"OttoInit",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"13",
+			"8",
+			"9", 
+			{
+				"setup": "",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
-				"work": "",
+				"work": "Ottobot.init({0},{1},{2},{3},true,{4},{5},{6},{7});\n",
+				"loop": ""
+			}
+		],
+        [
+			"w",
+			"LEDMatrix Max7219 init :Data In Pin  %n CS Pin %n  Clock Pin %n",
+			"MatrixInit",
+			"10",
+			"11",
+			"12",
+			{
+				"setup": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
+				"work": "Ottobot.initMatrix({0},{1},{2});\n",
 				"loop": ""
 			}
 		],
@@ -31,8 +67,8 @@
 			"0", 
 			{
 				"setup": "",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.setTrims({0},{1},{2},{3});\nOttobot.saveTrimsOnEEPROM();\n",
 				"loop": ""
 			}
@@ -46,8 +82,8 @@
 			"25", 
 			{
 				"setup": "",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.move({0},{1},{2});\n",
 				"loop": ""
 			}
@@ -60,8 +96,8 @@
 			"happy",
 			{
 				"setup": "",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.playGesture({0});\n",
 				"loop": ""
 			}
@@ -74,8 +110,8 @@
 			"Connection",
 			{
 				"setup": "",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.sing({0});\n",
 				"loop": ""
 			}
@@ -88,8 +124,8 @@
 			"_Half",
 			{
 				"setup": "",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "Ottobot._playNote({0},{1});\n",
 				"loop": ""
 			}
@@ -102,8 +138,8 @@
 			"smile",
 			{
 				"setup": "",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.putMouth({0});\n",
 				"loop": ""
 			}
@@ -116,8 +152,8 @@
 			"0",
 			{
 				"setup": "",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.putAnimationMouth({0},{1});\n",
 				"loop": ""
 			}
@@ -128,8 +164,8 @@
 			"clearMouth",
 			{
 				"setup": "",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.clearMouth();\n",
 				"loop": ""
 			}
@@ -140,8 +176,8 @@
 			"getDistance",
 			{
 				"setup": "",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.getDistance()",
 				"loop": ""
 			}
@@ -152,8 +188,8 @@
 			"getNoise",
 			{
 				"setup": "",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.getNoise()",
 				"loop": ""
 			}
@@ -165,8 +201,8 @@
 			"LEFT",
 			{
 				"setup": "",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "analogRead({0})",
 				"loop": ""
 			}
@@ -178,8 +214,8 @@
 			"key1",
 			{
 				"setup": "pinMode(A{0},INPUT_PULLUP);\n",
-				"inc": "",
-				"def": "",
+				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 				"work": "(digitalRead(A{0})== 0)",
 				"loop": ""
 			}
@@ -189,8 +225,8 @@
 		"serialWrite", "hello",
 		{
 		"setup":"Serial.begin(115200);\n",
-		"inc":"",
-		"def":"",
+		"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
 		"work":"Serial.println({0});\n",
 		"loop":""}
 		],
@@ -200,8 +236,8 @@
       "serialAvailable",
       {
         "setup": "Serial.begin(115200);\n",
-        "inc": "",
-        "def": "",
+        "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
         "work": "Serial.available()",
         "loop": ""
       }
@@ -212,8 +248,8 @@
       "serialRead",
       {
         "setup": "Serial.begin(115200);\n",
-        "inc": "",
-        "def": "",
+        "inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
+				"def": "Otto Ottobot;\n",
         "work": "Serial.read()",
         "loop": ""
       }
