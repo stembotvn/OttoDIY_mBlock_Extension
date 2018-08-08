@@ -21,7 +21,7 @@
 				"loop": ""
 			}
 		],
-		init(int YL, int YR, int RL, int RR, bool load_calibration=true, int NoiseSensor=PIN_NoiseSensor, int Buzzer=PIN_Buzzer, int USTrigger=PIN_Trigger, int USEcho=PIN_Echo);
+		
 		[
 			"w",
 			"Otto init :LegLeft Pin  %n LegRight Pin %n LeftFoot Pin %n RightFoot Pin %n Noise Sensor Pin A%n  BuzzerPin %n SRF04 Trig %n SRF04 Echo %n",
@@ -38,7 +38,7 @@
 				"setup": "",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
-				"work": "Ottobot.init({0},{1},{2},{3},true,{4},{5},{6},{7});\n",
+				"work": "Ottobot.init({0},{1},{2},{3},true,A{4},{5},{6},{7});\n",
 				"loop": ""
 			}
 		],
