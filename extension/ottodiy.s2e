@@ -1,6 +1,6 @@
 {   "extensionName": "ottodiy",
-	"description": "ottodiy Extension",
-	"version": "4.0",
+	"description": "otto Arduino Extension",
+	"version": "4.1",
 	"author": "STEMbot.vn",
 	"homepage": "https://github.com/stembotvn/OttoDIY_mBlock_Extension",
 	"sort": 0,
@@ -81,7 +81,7 @@
 			"normal",
 			"25", 
 			{
-				"setup": "",
+				"setup": "Ottobot.defaultInit();\n",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.move({0},{1},{2});\n",
@@ -95,7 +95,7 @@
 			"gesture",
 			"happy",
 			{
-				"setup": "",
+				"setup": "Ottobot.defaultInit();\n",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.playGesture({0});\n",
@@ -109,7 +109,7 @@
 			"sing",
 			"Connection",
 			{
-				"setup": "",
+				"setup": "Ottobot.defaultInit();\n",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.sing({0});\n",
@@ -123,7 +123,7 @@
 			"C4",
 			"_Half",
 			{
-				"setup": "",
+				"setup": "Ottobot.defaultInit();\n",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
 				"work": "Ottobot._playNote({0},{1});\n",
@@ -137,7 +137,7 @@
 			"putMouth",
 			"smile",
 			{
-				"setup": "",
+				"setup": "Ottobot.defaultInit();\n",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.putMouth({0});\n",
@@ -151,7 +151,7 @@
 			"littleUuh",
 			"0",
 			{
-				"setup": "",
+				"setup": "Ottobot.defaultInit();\n",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.putAnimationMouth({0},{1});\n",
@@ -163,7 +163,7 @@
 			"Clear Mouth",
 			"clearMouth",
 			{
-				"setup": "",
+				"setup": "Ottobot.defaultInit();\n",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.clearMouth();\n",
@@ -175,7 +175,7 @@
 			"Get Distance",
 			"getDistance",
 			{
-				"setup": "",
+				"setup": "Ottobot.defaultInit();\n",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.getDistance()",
@@ -187,7 +187,7 @@
 			"Get Noise",
 			"getNoise",
 			{
-				"setup": "",
+				"setup": "Ottobot.defaultInit();\n",
 				"inc": "#include <Servo.h>\n#include <EEPROM.h>\n #include \"Otto.h\"\n",
 				"def": "Otto Ottobot;\n",
 				"work": "Ottobot.getNoise()",
