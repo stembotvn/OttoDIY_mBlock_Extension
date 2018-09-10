@@ -12,14 +12,12 @@
 #include "US.h"
 
 
-
 void Otto::init(int YL, int YR, int RL, int RR, bool load_calibration, int NoiseSensor, int Buzzer, int USTrigger, int USEcho) {
   
   servo_pins[0] = YL;
   servo_pins[1] = YR;
   servo_pins[2] = RL;
   servo_pins[3] = RR;
-
   attachServos();
   isOttoResting=false;
   Serial.println("Loading calibration data...");
@@ -50,7 +48,10 @@ void Otto::init(int YL, int YR, int RL, int RR, bool load_calibration, int Noise
   ledmatrix.setIntensity(1);
 
 }
+void Otto::defaultInit(){
+	init(HIP_L, HIP_R, FOOT_L, FOOT_R, true, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);  
 
+}
 ///////////////////////////////////////////////////////////////////
 //-- ATTACH & DETACH FUNCTIONS ----------------------------------//
 ///////////////////////////////////////////////////////////////////

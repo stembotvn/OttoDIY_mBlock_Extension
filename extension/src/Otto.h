@@ -31,7 +31,7 @@
 #define PIN_Buzzer  13
 #define PIN_Trigger 8
 #define PIN_Echo    9
-#define PIN_NoiseSensor A6
+#define PIN_NoiseSensor 6 //Analog Pin 6
 ///define Bluetooth in SoftwareSerial 
 #define BT_Rx   6  
 #define BT_Tx   7
@@ -43,10 +43,13 @@
 class Otto
 {
   public:
+   // Otto() {init(HIP_L, HIP_R, FOOT_L, FOOT_R, true, PIN_NoiseSensor, PIN_Buzzer,PIN_Trigger, PIN_Echo);}
     //-- Otto initialization
     void init(int YL, int YR, int RL, int RR, bool load_calibration=true, int NoiseSensor=PIN_NoiseSensor, int Buzzer=PIN_Buzzer, int USTrigger=PIN_Trigger, int USEcho=PIN_Echo);
-
+    void initMatrix(int MaxDin,int MaxCS,int MaxClk)
+     {Max7219_Din=MaxDin;Max7219_Cs=MaxCS;Max7219_Clk=MaxClk;}
     //-- Attach & detach functions
+     void defaultInit();
     void attachServos();
     void detachServos();
 
@@ -107,13 +110,14 @@ class Otto
 
  
   private:
-    
-    MaxMatrix ledmatrix=MaxMatrix(PIN_DIN,PIN_CS,PIN_CLK, 1);  // init Max7219 LED Matrix, 1 module
-
+    int Max7219_Din = PIN_DIN;
+    int Max7219_Cs = PIN_CS;
+    int Max7219_Clk = PIN_CLK;
+    MaxMatrix ledmatrix=MaxMatrix(Max7219_Din,Max7219_Cs,Max7219_Clk, 1);  // init Max7219 LED Matrix, 1 module
     BatReader battery;
     Oscillator servo[4];
     US us;
-
+  
     int servo_pins[4];
     int servo_trim[4];
     int servo_position[4];
